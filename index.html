@@ -12,6 +12,10 @@
   <link href="assets/img/programming.png" rel="icon">
   <link href="assets/img/programming.png" rel="apple-touch-icon">
 
+  <!-- FontAwesome Icons CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
@@ -28,48 +32,23 @@
   <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
+<!-- Isotope.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/isotope/3.0.6/isotope.pkgd.min.js"></script>
+
+
 <body class="index-page">
 
   <header id="header" class="header dark-background d-flex flex-column">
     <i class="header-toggle d-xl-none bi bi-list"></i>
-
-    <!-- <div class="profile-img">
-      <img src="assets/img/my-profile-img.JPG" alt="" class="img-fluid rounded-circle">
-    </div> 
-
-    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <!-- <img src="assets/img/logo.png" alt=""> 
-      <h1 class="sitename">George Christopoulos</h1>
-    </a>-->
-
-    
 
     <nav id="navmenu" class="navmenu">
       <ul>
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <!--<li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>-->
-        <!--<li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>-->
-        <!--<li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> 
-		<i class="bi bi-chevron-down toggle-dropdown"></i></a>
-          <ul>
-            <li><a href="#">Dropdown 1</a></li>
-            <li><a href="#">Dropdown 2</a></li>
-            <!--<li><a href="#">Dropdown 3</a></li>
-            <li><a href="#">Dropdown 4</a></li>
-          </ul>
-        </li> -->
+        <li><a href="#portfolio"><i class="bi bi-file-earmark-text navicon"></i> Portfolio</a></li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
-        <!--<li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-          <ul>
-            <li><a href="#">Dropdown 1</a></li>
-            <li><a href="#">Dropdown 2</a></li>
-            <li><a href="#">Dropdown 3</a></li>
-            <li><a href="#">Dropdown 4</a></li>
-          </ul>
-        </li>-->
       </ul>
     </nav>
 	
@@ -96,13 +75,13 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/image1.jpg" alt="" data-aos="fade-in" class="">
+      <img src="assets/img/backgroundsetup.jpg" alt="" data-aos="fade-in" class="">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2>George Christopoulos</h2>
         <p>I'm <span class="typed" data-typed-items="Computer Science Graduate, Android Developer, Guitar Player">  </span>
-		<span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
-		<span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+		    <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
+		    <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
       </div>
 
     </section><!-- /Hero Section -->
@@ -173,6 +152,8 @@
 
     </section><!-- /About Section -->
 
+
+    
     <!-- Stats Section 
     <section id="stats" class="stats section">
 
@@ -196,73 +177,58 @@
 
     </section> /Stats Section --> 
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills section light-background">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Skills</h2>
-      </div><!-- End Section Title -->
+<!-- Skills Section -->
+<section id="skills" class="skills section light-background">
+  <div class="container section-title" data-aos="fade-up">
+      <h2>Skills</h2>
+  </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+  <div class="container">
+      <div class="row skills-content">
 
-        <div class="row skills-content skills-animation">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>Java</span> <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+          <!-- Left Column -->
+          <div class="col-lg-3" data-aos="fade-up">
+              <div class="list-group">
+                  <a class="list-group-item list-group-item-action active">Programming Languages</a>
+                  <a class="list-group-item list-group-item-action disabled">Java</a>
+                  <a class="list-group-item list-group-item-action disabled">Kotlin</a>
+                  <a class="list-group-item list-group-item-action disabled">C#</a>
+                  <a class="list-group-item list-group-item-action disabled">Python</a>
+                  <a class="list-group-item list-group-item-action disabled">JavaScript</a>
+                  <a class="list-group-item list-group-item-action disabled">HTML</a>
               </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Kotlin</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span> Jetpack Compose</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
           </div>
 
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>C#</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+          <!-- Right Column -->
+          <div class="col-lg-3" data-aos="fade-up">
+              <div class="list-group">
+                  <a class="list-group-item list-group-item-action active">Databases & Tools</a>
+                  <a class="list-group-item list-group-item-action disabled">Firebase</a>
+                  <a class="list-group-item list-group-item-action disabled">SQL</a>
+                  <a class="list-group-item list-group-item-action disabled">Android Studio</a>
+                  <a class="list-group-item list-group-item-action disabled">Intellij</a>
+                  <a class="list-group-item list-group-item-action disabled">PyCharm</a>
+                  <a class="list-group-item list-group-item-action disabled">GIT</a>
+                  
               </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>SQL/CMS</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Python</span> <i class="val">65%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
           </div>
 
-        </div>
+          <!-- Third Column -->
+          <div class="col-lg-3" data-aos="fade-up">
+              <div class="list-group">
+                  <a class="list-group-item list-group-item-action active">Frameworks & Libraries</a>
+                  <a class="list-group-item list-group-item-action disabled">Jetpack Compose</a>
+                  <a class="list-group-item list-group-item-action disabled">.NET</a>
+              </div>
+          </div>
 
       </div>
+  </div>
+</section>
 
-    </section><!-- /Skills Section -->
+
+
 
     <!-- Resume Section -->
     <section id="resume" class="resume section">
@@ -354,180 +320,97 @@
 
     </section><!-- /Resume Section -->
 
-    <!-- Portfolio Section -->
-       <!-- <section id="portfolio" class="portfolio section light-background">-->
-
-      <!-- Section Title 
+    <section id="portfolio" class="portfolio section light-background">
       <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Portfolio</h2>
       </div><!-- End Section Title -->
+  
+      <div class="container">
+          <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+  
+            <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".personal">Personal Projects</li>
+              <li data-filter=".team">Team Projects</li>
+          </ul>
+          
+          
+  
+              <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+  
+                  <!-- Android App Project -->
+                  <div class="col-lg-4 col-md-6 portfolio-item isotope-item personal">
 
-     <!-- <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Product</li>
-            <li data-filter=".filter-branding">Branding</li>
-            <li data-filter=".filter-books">Books</li>
-          </ul> End Portfolio Filters -->
-
-          <!--<div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                    <a href="https://github.com/Georgechrp/ChordsHub-Android-App" target="_blank" class="portfolio-box">
+                        <i class="fa-brands fa-android"></i>
+                        <h4>Android App(Thesis)</h4>
+                        <span > Kotlin, Jetpack Compose</span>
+                    </a>
                 </div>
+  
+                 <!-- Bioinformatics Project -->
+                 <div class="col-lg-4 col-md-6 portfolio-item isotope-item team">
+                  <a href="https://github.com/Georgechrp/Bioinformatics-2024" target="_blank" class="portfolio-box">
+                      <i class="fa-solid fa-dna"></i>
+                      <h4>Bioinformatics</h4>
+                      <span > Python</span>
+                  </a>
               </div>
-            </div> End Portfolio Item -->
 
-           <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
+              <!-- Web Development Project -->
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item team">
+                  <a href="https://github.com/Georgechrp/MobileAccountManagement1-2024" target="_blank" class="portfolio-box">
+                      <i class="fa-solid fa-globe"></i>
+                      <h4>Web Page</h4>
+                      <span > Java</span>
+                  </a>
               </div>
-            </div> End Portfolio Item -->
 
-           <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div> End Portfolio Item -->
+              <!-- Multimedia system Project -->
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item personal">
+                <a href="https://github.com/Georgechrp/Multimedia-Systems-Project-2024" target="_blank" class="portfolio-box">
+                    <i class="fa-solid fa-photo-film"></i>
+                    <h4>Multimedia Systems</h4>
+                    <span > Python</span>
+                </a>
+            </div>
 
-            <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div> End Portfolio Item -->
+            <!-- Android 1 Project -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item personal">
+              <a href="https://github.com/Georgechrp/UnipiPLIShopping" target="_blank" class="portfolio-box">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <h4>E - shop</h4>
+                  <span > Java, XML</span>
+              </a>
+          </div>
 
-            <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div> End Portfolio Item -->
-
-          <!--  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div> End Portfolio Item -->
-
-            <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div> End Portfolio Item -->
-
-          <!--  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div> End Portfolio Item -->
-
-            <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div> End Portfolio Item -->
-
-            <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div> End Portfolio Item -->
-
-           <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div> End Portfolio Item -->
-
-            <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div> End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
+          <!-- Android 2 Project -->
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item personal">
+            <a href="https://github.com/Georgechrp/Unipi-Audio-Stories" target="_blank" class="portfolio-box">
+                <i class="fa-solid fa-headphones"></i>
+                <h4>Audio Stories</h4>
+                <span > Java, XML</span>
+            </a>
         </div>
 
-      </div>
+      
 
-    </section><!-- /Portfolio Section -->
+       <!-- Video Clips 2 Project -->
+       <div class="col-lg-4 col-md-6 portfolio-item isotope-item personal">
+        <a href="https://github.com/Georgechrp/VideoClips-2024" target="_blank" class="portfolio-box">
+            <i class="fa-solid fa-play"></i>
+            <h4>Video Clips</h4>
+            <span > C#</span>
+        </a>
+    </div>
+
+  
+              </div><!-- End Portfolio Container -->
+          </div>
+      </div>
+  </section>
+  
+  
 
     
 
