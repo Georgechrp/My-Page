@@ -21,6 +21,13 @@
   }
   headerToggleBtn.addEventListener('click', headerToggle);
 
+ 
+  function toggleContactPanel() {
+    const panel = document.getElementById("contactPanel");
+    panel.style.display = panel.style.display === "none" ? "block" : "none";
+  }
+
+
   /**
    * Hide mobile nav on same-page/hash links
    */
@@ -166,6 +173,8 @@
     });
 
   });
+
+  
 
   /**
    * Init swiper sliders
