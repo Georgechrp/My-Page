@@ -1,0 +1,39 @@
+{
+    "en": {
+      "name": "George Christopoulos",
+      "typed_intro": "I'm",
+      "typed_items": [
+      "Computer Science Graduate",
+      "Aspiring Android Developer",
+      "Guitar Player"
+    ],
+      "title": "Computer Science Graduate, aspiring Android Developer, Guitar Player",
+      "summary": "Computer Science graduate passionate about Android and Web development.",
+      "home_section_title": "Home",
+      "about_section_title": "About",
+      "about_text1": "I am a <strong>Computer Science graduate</strong> who enjoys building <strong>Android apps</strong>. I have experience with <strong>Java</strong>, <strong>Kotlin</strong>, and tools like <strong>Firebase</strong> and <strong>Room Database</strong>. On the <strong>web development side</strong>, I work with technologies such as <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>, and I'm interested in learning <strong>Flutter</strong>. I like creating <strong>simple</strong> and <strong>smooth user experiences</strong>.",
+      "skills_section_title": "Skills",
+      "resume_section_title": "Resume",
+      "portfolio_section_title": "Portfolio",
+      "contact_section_title": "Contact"
+    },
+    "gr": {
+      "name": "Γιώργος Χριστόπουλος",
+      "typed_intro": "Είμαι",
+      "typed_items": [
+        "απόφοιτος Πληροφορικής",
+        "επίδοξος Android Developer",
+        "Κιθαρίστας"
+      ],
+      "title": "Μηχανικός Λογισμικού",
+      "summary": "Απόφοιτος Πληροφορικής με πάθος για Android και Web development.",
+      "home_section_title": "Αρχική",
+      "about_section_title": "Σχετικά",
+     "about_text1": "Είμαι <strong>απόφοιτος Πληροφορικής</strong> που απολαμβάνει να δημιουργεί <strong>Android εφαρμογές</strong>. Έχω εμπειρία με <strong>Java</strong>, <strong>Kotlin</strong> και εργαλεία όπως το <strong>Firebase</strong> και η <strong>Room Database</strong>. Στον τομέα του <strong>web development</strong>, δουλεύω με τεχνολογίες όπως <strong>HTML</strong>, <strong>CSS</strong> και <strong>JavaScript</strong>, ενώ με ενδιαφέρει να μάθω και <strong>Flutter</strong>. Μου αρέσει να δημιουργώ <strong>απλές</strong> και <strong>ομαλές εμπειρίες χρήστη</strong>.",
+      "skills_section_title": "Δεξιότητες",
+      "resume_section_title": "Βιογραφικό",
+      "portfolio_section_title": "Εργα",
+      "contact_section_title": "Επικοινωνία"
+    }
+  }
+  

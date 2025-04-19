@@ -55,28 +55,81 @@
         <!--<button class="secretButton" onclick="window.location.href='resume-bootstrap4-master/index.html'">
           Secret
         </button>-->
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i> Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#skills"><i class="bi bi-tools navicon"></i> Skills</a></li>
-      
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#portfolio"><i class="bi bi-collection navicon"></i> Portfolio</a></li>
+        <li>
+          <a href="#hero" class="active">
+            <i class="bi bi-house navicon"></i>
+            <span data-i18n="home_section_title">Home</span>
+          </a>
+        </li>
+        
+        <li>
+          <a href="#about">
+            <i class="bi bi-person navicon"></i>
+            <span data-i18n="about_section_title">About</span>
+          </a>
+        </li>
+        
+        <li>
+          <a href="#skills">
+            <i class="bi bi-tools navicon"></i>
+            <span data-i18n="skills_section_title">Skills</span>
+          </a>
+        </li>
+        
+        <li>
+          <a href="#resume">
+            <i class="bi bi-file-earmark-text navicon"></i>
+            <span data-i18n="resume_section_title">Resume</span>
+          </a>
+        </li>
+        
+        <a href="#portfolio">
+          <i class="bi bi-collection navicon"></i>
+          <span data-i18n="portfolio_section_title">Portfolio</span>
+        </a>
+        
+        
         <li class="dropdown">
           <a href="#contact" class="d-flex align-items-center justify-content-between">
-            <span><i class="bi bi-envelope navicon"></i> Contact</span>
+            <span>
+              <i class="bi bi-envelope navicon"></i>
+              <span data-i18n="contact_section_title">Contact</span>
+            </span>
             <i class="bi bi-chevron-down toggle-dropdown"></i>
           </a>
           <ul class="dropdown-menu">
-            <li><a href="https://t.me/Georgechrp" target="_blank"><i class="bi bi-telegram navicon"></i> Telegram</a></li>
-            <li><a href="https://github.com/Georgechrp" target="_blank"><i class="bi bi-github navicon"></i> GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/georgechrp" target="_blank"><i class="bi bi-linkedin navicon"></i> LinkedIn</a></li>
+            <li>
+              <a href="https://t.me/Georgechrp" target="_blank">
+                <i class="bi bi-telegram navicon"></i> Telegram
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Georgechrp" target="_blank">
+                <i class="bi bi-github navicon"></i> GitHub
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/georgechrp" target="_blank">
+                <i class="bi bi-linkedin navicon"></i> LinkedIn
+              </a>
+            </li>
           </ul>
         </li>
+        
         
       </ul>
       
     </nav>
-	
+    <div class="lang-toggle-wrapper">
+      <span class="lang-label">GR</span>
+      <label class="lang-switch">
+        <input type="checkbox" id="lang-toggle-global">
+        <span class="lang-slider"></span>
+      </label>
+      <span class="lang-label">EN</span>
+    </div>
+
+    
 
   </header>
 
@@ -87,12 +140,14 @@
 
       <img src="assets/img/backgroundsetup.jpg" alt="" data-aos="fade-in" class="">
 
+
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2>George Christopoulos</h2>
-        <p>I'm <span class="typed" data-typed-items="Computer Science Graduate, aspiring Android Developer, Guitar Player">  </span>
-		    <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
-		    <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <h2 data-i18n="name">George Christopoulos</h2>
+        <p>
+          <span data-i18n="typed_intro">I'm</span> <span class="typed" id="typed"></span>
+        </p>
       </div>
+      
 
     </section><!-- /Hero Section -->
 
@@ -101,19 +156,15 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <p>
+        <h2 data-i18n="about_section_title">About</h2>
+        <p data-i18n-html="about_text1">
           I am a <strong>Computer Science graduate</strong> who enjoys building <strong>Android apps</strong>.
           I have experience with <strong>Java</strong>, <strong>Kotlin</strong>, and tools like <strong>Firebase</strong> and <strong>Room Database</strong>.
           On the <strong>web development side</strong>, I work with technologies such as <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>, and I'm interested in learning <strong>Flutter</strong>.
           I like creating <strong>simple</strong> and <strong>smooth user experiences</strong>.
-          
-          
-      </p>
-      
-
-
-      </div><!-- End Section Title -->
+        </p>
+      </div>
+      <!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 

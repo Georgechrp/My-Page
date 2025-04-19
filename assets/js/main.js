@@ -99,19 +99,8 @@
   /**
    * Init typed.js
    */
-  const selectTyped = document.querySelector('.typed');
-  if (selectTyped) {
-    let typed_strings = selectTyped.getAttribute('data-typed-items');
-    typed_strings = typed_strings.split(',');
-    new Typed('.typed', {
-      strings: typed_strings,
-      loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 2000
-    });
-  }
 
+  
   /**
    * Initiate Pure Counter
    */
@@ -236,3 +225,57 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+
+  /**
+   * Switch Butotn
+   */
+  document.addEventListener("DOMContentLoaded", () => {
+    const langToggle = document.getElementById("lang-toggle-global");
+    let typedInstance = null;
+
+    async function loadTranslations(lang) {
+      try {
+        const res = await fetch("assets/lang/lang.json");
+        const data = await res.json();
+    
+        // Μετάφραση όλων των data-i18n (εκτός typed_items)
+        document.querySelectorAll("[data-i18n]").forEach(el => {
+          const key = el.getAttribute("data-i18n");
+          if (data[lang] && data[lang][key] && key !== "typed_items") {
+            el.textContent = data[lang][key];
+          }
+        });
+  
+        // Ενημέρωση typed.js
+    const typedElement = document.getElementById("typed");
+    if (typedElement && data[lang].typed_items) {
+      if (typedInstance) {
+        typedInstance.destroy(); // Καταστροφή παλιάς instance
+      }
+      typedInstance = new Typed("#typed", {
+        strings: data[lang].typed_items,
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 50,
+        backDelay: 2000
+      });
+    }
+
+    localStorage.setItem("selectedLang", lang);
+  } catch (err) {
+    console.error("Translation loading failed:", err);
+  }
+}
+
+    // Αντίστροφο λογικό για το switch
+    const savedLang = localStorage.getItem("selectedLang") || "en";
+    loadTranslations(savedLang);
+    langToggle.checked = savedLang === "gr"; // Αν gr, τότε switch ON (δεξιά)
+  
+    langToggle?.addEventListener("change", () => {
+      const lang = langToggle.checked ? "gr" : "en"; //Αν ON → Ελληνικά
+      loadTranslations(lang);
+    });
+  });
+  
