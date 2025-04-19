@@ -1,5 +1,6 @@
 {
     "en": {
+      
       "name": "George Christopoulos",
       "typed_intro": "I'm",
       "typed_items": [
@@ -10,6 +11,10 @@
       "title": "Computer Science Graduate, aspiring Android Developer, Guitar Player",
       "summary": "Computer Science graduate passionate about Android and Web development.",
       "home_section_title": "Home",
+
+
+
+      "//": "----  About Section  ----",
       "about_section_title": "About",
       "about_text1": "I am a <strong>Computer Science graduate</strong> who enjoys building <strong>Android apps</strong>. I have experience with <strong>Java</strong>, <strong>Kotlin</strong>, and tools like <strong>Firebase</strong> and <strong>Room Database</strong>. On the <strong>web development side</strong>, I work with technologies such as <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>, and I'm interested in learning <strong>Flutter</strong>. I like creating <strong>simple</strong> and <strong>smooth user experiences</strong>.",
       "about_head2": "Computer Science Graduate",
@@ -23,11 +28,36 @@
       "status_text": "Senior year",
       "about_text3":"I am passionate about building <strong>fast</strong> and <strong>easy-to-use mobile apps</strong> and <strong>web pages</strong>.I’m always looking for ways to improve my <strong>coding skills</strong> and learn new things.I enjoy working in <strong>dynamic environments</strong> where I can solve problems and grow as a developer and as a person.",
       "about_text4":"When I'm not coding, I enjoy playing the guitar, cycling and watching movies.",
+
+
+      "//": "----  Skills Section  ----",
       "skills_section_title": "Skills",
+      "programming_languages":"💻 Programming Languages",
+      "databasestools":"🗄️ Databases & Tools",
+      "frameworkslibraries":"Frameworks & Libraries",
+      "other_skills_title": "💬 Soft Skills",
+      "skill_teamwork": "Teamwork",
+      "skill_communication": "Communication",
+      "skill_version_control": "Version Control",
+      "skill_creativity": "Creativity",
+      "skill_responsibility": "Responsibility",
+      "skill_learning": "Continuous Learning",
+
+
+      "//": "----  Resume Section  ----",
       "resume_section_title": "Resume",
+
+
+
+
       "portfolio_section_title": "Portfolio",
       "contact_section_title": "Contact"
     },
+
+
+
+
+
     "gr": {
       "name": "Γιώργος Χριστόπουλος",
       "typed_intro": "Είμαι",
@@ -39,10 +69,13 @@
       "title": "Μηχανικός Λογισμικού",
       "summary": "Απόφοιτος Πληροφορικής με πάθος για Android και Web development.",
       "home_section_title": "Αρχική",
+
+
+      "//": "----  About Section  ----",
       "about_section_title": "Σχετικά",
       "about_text1": "Είμαι απόφοιτος Πληροφορικής με ιδιαίτερο ενδιαφέρον για την ανάπτυξη εφαρμογών Android. Έχω εργαστεί με τεχνολογίες όπως <strong>Java</strong>, <strong>Kotlin</strong>, <strong>Firebase</strong> και <strong>Room Database</strong>. Παράλληλα, έχω εμπειρία και στον χώρο του <strong>web development</strong>, με χρήση <strong>HTML</strong>, <strong>CSS</strong> και <strong>JavaScript</strong>. Τελευταία, με ενδιαφέρει και η <strong>εκμάθηση του Flutter</strong>. Στόχος μου είναι να σχεδιάζω <strong>καθαρά</strong> και <strong>φιλικά προς τον χρήστη</strong> συστήματα.",
       "about_head2": "Απόφοιτος του Τμήματος Πληροφορικής",
-      "about_text2": "Κατά τη διάρκεια των σπουδών μου στο <strong>Πανεπιστήμιο Πειραιώς</strong>, συμμετείχα σε αρκετά έργα. Η πτυχιακή μου, με τίτλο \"<strong>Chords App</strong>\", είναι μια mobile εφαρμογή που βοηθά τους χρήστες να βρίσκουν συγχορδίες για τα αγαπημένα τους τραγούδια. Χρησιμοποίησα εργαλεία όπως το <strong>Jetpack Compose</strong> και το <strong>Firebase</strong>, επιδεικνύοντας την ικανότητά μου να σχεδιάζω <strong>λειτουργικές</strong> και <strong>αποτελεσματικές εφαρμογές</strong>.",
+      "about_text2": "Κατά τη διάρκεια των σπουδών μου στο <strong>Πανεπιστήμιο Πειραιώς</strong>, συμμετείχα σε αρκετές <a href=\"#portfolio\" class=\"text-link\">εργασίες</a>. Η πτυχιακή μου, με τίτλο \"<strong>Chords App</strong>\", είναι μια mobile εφαρμογή που βοηθά τους χρήστες να βρίσκουν συγχορδίες για τα αγαπημένα τους τραγούδια. Χρησιμοποίησα εργαλεία όπως το <strong>Jetpack Compose</strong> και το <strong>Firebase</strong>, δείχνοντας έτσι την ικανότητά μου να σχεδιάζω <strong>λειτουργικές</strong> και <strong>αποτελεσματικές εφαρμογές</strong>.",
       "birthday_label": "</strong>Έτος Γέννησης:</strong>",
       "degree_label": "</strong>Βεβαίωση:</strong>",
       "city_label": "</strong>Κατοικία:</strong>",
@@ -52,8 +85,31 @@
       "status_text": "Αναζήτηση εργασίας",
       "about_text3": "Ασχολούμαι με την ανάπτυξη <strong>γρήγορων</strong> και <strong>εύχρηστων εφαρμογών</strong> για κινητά και ιστοσελίδες. Με ενδιαφέρει διαρκώς η εξέλιξη των <strong>προγραμματιστικών μου δεξιοτήτων</strong> και η απόκτηση νέας γνώσης. Προτιμώ να εργάζομαι σε <strong>προκλητικά περιβάλλοντα</strong>, όπου μπορώ να βελτιώνομαι και ως προγραμματιστής και ως άνθρωπος.",
       "about_text4": "Στον ελεύθερο χρόνο μου, μου αρέσει να παίζω κιθάρα, να κάνω ποδήλατο και να παρακολουθώ ταινίες.",
+
+
+
+      "//": "----  Skills Section  ----",
       "skills_section_title": "Δεξιότητες",
+      "programming_languages":"💻 Γλώσσες Προγραμματισμού",
+      "databasestools":"🗄️ Βάσεις δεδομένων & Εργαλεία",
+      "frameworkslibraries":"Frameworks & Βιβλιοθήκες",
+      "other_skills_title": "💬 Λοιπές Δεξιότητες",
+      "skill_teamwork": "Ομαδικό Πνεύμα",
+      "skill_communication": "Επικοινωνία",
+      "skill_version_control": "Έλεγχος Εκδόσεων",
+      "skill_creativity": "Δημιουργικότητα",
+      "skill_responsibility": "Υπευθυνότητα",
+      "skill_learning": "Διαρκής Μάθηση",
+
+
+
+
+      "//": "----  Resume Section  ----",
       "resume_section_title": "Βιογραφικό",
+
+
+
+
       "portfolio_section_title": "Έργα",
       "contact_section_title": "Επικοινωνία"
     }

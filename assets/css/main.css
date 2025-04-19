@@ -1454,3 +1454,18 @@ section,
   padding: 10px;
   border-left: 4px solid #2196F3;
 }
+
+
+
+
+
+
+.text-link {
+  color: #00bfff;
+  text-decoration: underline;
+  transition: all 0.2s ease;
+}
+.text-link:hover {
+  color: #0099cc;
+  text-decoration: none;
+}
