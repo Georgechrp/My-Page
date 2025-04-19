@@ -230,6 +230,8 @@
   /**
    * Switch Butotn
    */
+
+  
   document.addEventListener("DOMContentLoaded", () => {
     const langToggle = document.getElementById("lang-toggle-global");
     let typedInstance = null;
@@ -246,6 +248,14 @@
             el.textContent = data[lang][key];
           }
         });
+        // Μετάφραση στοιχείων με HTML (π.χ. <p> με <strong>)
+document.querySelectorAll("[data-i18n-html]").forEach(el => {
+  const key = el.getAttribute("data-i18n-html");
+  if (data[lang] && data[lang][key]) {
+    el.innerHTML = data[lang][key];
+  }
+});
+
   
         // Ενημέρωση typed.js
     const typedElement = document.getElementById("typed");
