@@ -1463,6 +1463,7 @@ section,
   padding: 8px 12px;
   border-radius: 8px;
   box-shadow: 0 0 6px rgba(0,0,0,0.3);
+  
 }
 
 /* ✅ Responsive για κινητά & tablets */
@@ -1473,6 +1474,11 @@ section,
     padding: 6px 10px;
     font-size: 13px;
   }
+}
+
+.fixed-lang-toggle.hidden {
+  opacity: 0;
+  visibility: hidden;
 }
 
 

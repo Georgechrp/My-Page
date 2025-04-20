@@ -255,6 +255,16 @@ document.querySelectorAll("[data-i18n-html]").forEach(el => {
     el.innerHTML = data[lang][key];
   }
 });
+const langToggleWrapper = document.querySelector('.fixed-lang-toggle');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 20) {
+    langToggleWrapper.classList.add('hidden');
+  } else {
+    langToggleWrapper.classList.remove('hidden');
+  }
+});
+
 
   
         // Ενημέρωση typed.js
