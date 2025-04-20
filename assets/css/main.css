@@ -1457,13 +1457,24 @@ section,
 .fixed-lang-toggle {
   position: fixed;
   top: 20px;
-  left: 320px;
+  left: 320px; /* για desktop */
   z-index: 9999;
-  background-color: rgba(0, 0, 0, 0.6); /* προαιρετικό, για σκούρο φόντο */
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 8px 12px;
   border-radius: 8px;
   box-shadow: 0 0 6px rgba(0,0,0,0.3);
 }
+
+/* ✅ Responsive για κινητά & tablets */
+@media (max-width: 991px) {
+  .fixed-lang-toggle {
+    left: 20px; /* για κινητά */
+    top: 15px;
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+}
+
 
 
 
