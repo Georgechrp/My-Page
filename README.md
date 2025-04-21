@@ -2,7 +2,7 @@
 
 Αυτό το repository περιέχει τον πηγαίο κώδικα της προσωπικής μου ιστοσελίδας, διαθέσιμη στο:
 
-🔗 https://georgioschristopoulos.info
+🔗 [Δείτε την προσωπική μου ιστοσελίδα](https://georgioschristopoulos.info)
 
 ## 📄 Βιογραφικό
 
