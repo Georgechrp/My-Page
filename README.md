@@ -12,6 +12,8 @@
 
 ## 📦 Τεχνολογίες που χρησιμοποιώ
 
+- Android, Kotlin, Jetpack Compose
+- C#, Python
 - HTML, CSS, JavaScript
 
 
