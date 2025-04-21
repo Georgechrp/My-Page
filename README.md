@@ -8,7 +8,7 @@
 
 Μπορείτε να δείτε ή να κατεβάσετε το βιογραφικό μου από εδώ:
 
-👉 [Δείτε το Βιογραφικό](https://assets/CV - Georgios Christopoulos.pdf)
+👉 [Δείτε το Βιογραφικό](https://assets/CV-GeorgiosChristopoulos.pdf)
 
 ## 📦 Τεχνολογίες που χρησιμοποιώ
 
