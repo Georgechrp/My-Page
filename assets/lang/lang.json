@@ -106,7 +106,7 @@
 
 
       "//": "----  About Section  ----",
-      "about_section_title": "Σχετικά",
+      "about_section_title": "Προφίλ",
       "about_text1": "Είμαι απόφοιτος Πληροφορικής με ιδιαίτερο ενδιαφέρον για την ανάπτυξη εφαρμογών Android. Έχω εργαστεί με τεχνολογίες όπως <strong>Java</strong>, <strong>Kotlin</strong>, <strong>Firebase</strong> και <strong>Room Database</strong>. Παράλληλα, έχω εμπειρία και στον χώρο του <strong>web development</strong>, με χρήση <strong>HTML</strong>, <strong>CSS</strong> και <strong>JavaScript</strong>. Τελευταία, με ενδιαφέρει και η <strong>εκμάθηση του Flutter</strong>. Στόχος μου είναι να σχεδιάζω <strong>καθαρά</strong> και <strong>φιλικά προς τον χρήστη</strong> συστήματα.",
       "about_head2": "Απόφοιτος του Τμήματος Πληροφορικής",
       "about_text2": "Κατά τη διάρκεια των σπουδών μου στο <strong>Πανεπιστήμιο Πειραιώς</strong>, συμμετείχα σε αρκετές <a href=\"#portfolio\" class=\"text-link\">εργασίες</a>. Η πτυχιακή μου, με τίτλο \"<strong>Chords App</strong>\", είναι μια mobile εφαρμογή που βοηθά τους χρήστες να βρίσκουν συγχορδίες για τα αγαπημένα τους τραγούδια. Χρησιμοποίησα εργαλεία όπως το <strong>Jetpack Compose</strong> και το <strong>Firebase</strong>, δείχνοντας έτσι την ικανότητά μου να σχεδιάζω <strong>λειτουργικές</strong> και <strong>αποτελεσματικές εφαρμογές</strong>.",
