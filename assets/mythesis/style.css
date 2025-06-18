@@ -93,3 +93,16 @@ footer {
   font-size: 14px;
   color: #555;
 }
+
+.feedback-link {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #555;
+}
+.feedback-link a {
+  color: #2980b9;
+  text-decoration: none;
+}
+.feedback-link a:hover {
+  text-decoration: underline;
+}
