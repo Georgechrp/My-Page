@@ -291,10 +291,10 @@ window.addEventListener('scroll', () => {
     // Αντίστροφο λογικό για το switch
     const savedLang = localStorage.getItem("selectedLang") || "en";
     loadTranslations(savedLang);
-    langToggle.checked = savedLang === "gr"; // Αν gr, τότε switch ON (δεξιά)
+    langToggle.checked = savedLang === "en"; // Αν gr, τότε switch ON (δεξιά)
   
     langToggle?.addEventListener("change", () => {
-      const lang = langToggle.checked ? "gr" : "en"; //Αν ON → Ελληνικά
+      const lang = langToggle.checked ? "en" : "gr"; //Αν ON → Ελληνικά
       loadTranslations(lang);
     });
   });
