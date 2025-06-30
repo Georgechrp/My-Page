@@ -6,6 +6,7 @@
   <title>Chordio - Thesis Presentation</title>
   <link rel="icon" href="images/logo.png" type="image/png">
   <link rel="stylesheet" href="style.css" />
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
   <header>
@@ -32,14 +33,46 @@
       <img src="images/app_flow.png" alt="App flow diagram" class="flow-img"/>
     </section>
 
-    <section class="screenshots">
+   <section class="screenshots">
       <h2>Screenshots</h2>
-      <div class="gallery">
-        <img src="images/screenshot1.jpg" alt="Screenshot 1" />
-        <img src="images/screenshot2.jpg" alt="Screenshot 2" />
-        <img src="images/screenshot3.jpg" alt="Screenshot 3" />
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/0SplashScreen.jpg" alt="Screenshot 0" /></div>
+          <div class="swiper-slide"><img src="images/1Home.jpg" alt="Screenshot 1" /></div>
+          <div class="swiper-slide"><img src="images/2SearchScreen.jpg" alt="Screenshot 2" /></div>
+          <div class="swiper-slide"><img src="images/3Library.jpg" alt="Screenshot 3" /></div>
+          <div class="swiper-slide"><img src="images/4Detailed.jpg" alt="Screenshot 4" /></div>
+          <div class="swiper-slide"><img src="images/5ScrollSpeed.jpg" alt="Screenshot 5" /></div>
+          <div class="swiper-slide"><img src="images/6Qr.jpg" alt="Screenshot 6" /></div>
+          <div class="swiper-slide"><img src="images/7Transpose.jpg" alt="Screenshot 7" /></div>
+          <div class="swiper-slide"><img src="images/8slide.jpg" alt="Screenshot 8" /></div>
+          <div class="swiper-slide"><img src="images/9Profile.jpg" alt="Screenshot 9" /></div>
+          <div class="swiper-slide"><img src="images/10Addasong.jpg" alt="Screenshot 10" /></div>
+          <div class="swiper-slide"><img src="images/11recents.jpg" alt="Screenshot 11" /></div>
+          <div class="swiper-slide"><img src="images/12settings.jpg" alt="Screenshot 12" /></div>
+          <div class="swiper-slide"><img src="images/13weeklystats.jpg" alt="Screenshot 13" /></div>
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
     </section>
+
+
+
+    <section class="video">
+      <h2>App Demo Video</h2>
+      <div class="video-container">
+        <iframe 
+          width="560" 
+          height="315" 
+          src="https://www.youtube.com/embed/hIzK5os3ti8?mute=1"
+          title="App Demo Video" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
 
 
     <section class="technologies">
@@ -61,5 +94,21 @@
 </p>
 
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+
 </body>
 </html>
