@@ -139,3 +139,19 @@ footer {
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
+
+
+
+.feedback-results {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+}
+.feedback-results h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.feedback-results iframe {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
