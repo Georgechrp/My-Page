@@ -9,6 +9,21 @@
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
+    <!-- Sidebar Navigation -->
+    <div class="sidebar" id="sidebar">
+      <a href="#about">About</a>
+      <a href="#flow">Flow</a>
+      <a href="#screenshots">Screenshots</a>
+      <a href="#video">Video</a>
+      <a href="#feedback">Feedback</a>
+      <a href="#technologies">Tech</a>
+      <a href="https://georgioschristopoulos.info/" target="_blank">Personal Site</a>
+    </div>
+
+    <!-- Hamburger Button -->
+    <button class="hamburger" onclick="toggleSidebar()">☰</button>
+
+
   <header>
     <img src="images/logo.png" alt="App Logo" class="logo" />
     <h1>Chordio</h1>
@@ -16,7 +31,7 @@
   </header>
 
   <main>
-    <section class="description">
+    <section id="about" class="description">
       <h2>About the App</h2>
       <p>This Android application is the final thesis project of an undergraduate student at the University of Piraeus. It is developed using Kotlin and Jetpack Compose, offering a clean UI for managing guitar chords, saving favorites, and discovering new songs.</p>
       <p><strong>Logo design by:</strong> <a href="https://www.behance.net/mariasideri" target="_blank">@aria sideri</a></p>
@@ -28,12 +43,12 @@
     </section>-->
 
     
-    <section class="app-flow">
+    <section id="flow" class="app-flow">
       <h2>App Flow</h2>
       <img src="images/app_flow.png" alt="App flow diagram" class="flow-img"/>
     </section>
 
-   <section class="screenshots">
+   <section id="screenshots" class="screenshots">
       <h2>Screenshots(Swipe)</h2>
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
@@ -58,7 +73,7 @@
 
 
 
-    <section class="video">
+    <section id="video" class="video">
       <h2>App Demo Video</h2>
       <div class="video-container">
         <iframe 
@@ -74,7 +89,7 @@
     </section>
 
 
-    <section class="feedback-results">
+    <section id="feedback" class="feedback-results">
       <h2>User Feedback (Live)</h2>
       <p>The following table shows the latest user responses submitted through the feedback form.</p>
       <iframe 
@@ -86,7 +101,7 @@
     </section>
 
 
-    <section class="technologies">
+    <section id="technologies" class="technologies">
       <h2>Technologies Used</h2>
       <ul>
         <li><strong>Language:</strong> Kotlin</li>
@@ -110,20 +125,38 @@
 
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    const swiper = new Swiper(".mySwiper", {
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+    <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      if (sidebar.style.width === "250px") {
+        sidebar.style.width = "0";
+      } else {
+        sidebar.style.width = "250px";
+      }
+    }
+
+    // Close sidebar when link is clicked (optional UX)
+    document.querySelectorAll(".sidebar a").forEach(link => {
+      link.addEventListener("click", () => {
+        document.getElementById("sidebar").style.width = "0";
+      });
     });
   </script>
+
 
 </body>
 </html>

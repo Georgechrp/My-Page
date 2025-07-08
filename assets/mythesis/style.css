@@ -155,3 +155,79 @@ footer {
   border: 1px solid #ccc;
   border-radius: 6px;
 }
+
+
+.personal-site-section {
+  text-align: center;
+  margin: 40px 0;
+}
+.personal-site-section .btn {
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.personal-site-section .btn:hover {
+  background-color: #005fa3;
+}
+
+
+
+
+/* Sidebar styles */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  background-color: #ffffffee;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar a {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+  display: block;
+  transition: 0.2s;
+}
+
+.sidebar a:hover {
+  background-color: #f0f0f0;
+  color: #0077cc;
+}
+
+/* Hamburger button */
+.hamburger {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 3000;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Optional: hide hamburger when sidebar is open (you can toggle it in JS too) */
+.sidebar.open + .hamburger {
+  display: none;
+}
+
+/* Responsive tip */
+@media (min-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
