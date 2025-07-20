@@ -5,7 +5,8 @@
       "typed_intro": "I'm",
       "typed_items": [
         "Computer Science Graduate",
-        "Android Developer in progress",
+        "Junior Software Engineer",
+        "Junior Android Developer",
         "Guitar Player"
       ],
       "title": "Computer Science Graduate, Android Developer in progress, Guitar Player",
@@ -97,7 +98,8 @@
       "typed_intro": "Είμαι",
       "typed_items": [
         "απόφοιτος Πληροφορικής",
-        "Android Developer",
+        "Μηχανικός Λογισμικού (Junior)",
+        "Προγραμματιστής Android (Junior)",
         "κιθαρίστας"
       ],
       "title": "Μηχανικός Λογισμικού",
@@ -162,8 +164,8 @@
       "experience_barista_task2": "Διαχειριζόμουν πολλαπλές παραγγελίες ταυτόχρονα με ακρίβεια.",
       "experience_barista_task3": "Συνεργαζόμουν αποτελεσματικά με την ομάδα σε ώρες αιχμής για ομαλή ροή.",
       "filter_all": "Όλα",
-      "filter_personal": "Προσωπικά Έργα",
-      "filter_team": "Ομαδικά Έργα",
+      "filter_personal": "Ατομικα",
+      "filter_team": "Ομαδικά",
 
 
 
