@@ -1636,6 +1636,6 @@ section,
   }
 
   .custom-nav-link span {
-    display: none;
+    display: inline;
   }
 }
