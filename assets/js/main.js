@@ -39,6 +39,21 @@
     });
 
   });
+    /**
+   * Close sidebar menu on link click (for customSidebar)
+   */
+  document.querySelectorAll('#customSidebar .custom-nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      const header = document.querySelector('#header');
+      const toggleBtn = document.querySelector('.header-toggle');
+      if (header.classList.contains('header-show')) {
+        header.classList.remove('header-show');
+        toggleBtn.classList.remove('bi-x');
+        toggleBtn.classList.add('bi-list');
+      }
+    });
+  });
+
 
   /**
    * Toggle mobile nav dropdowns
