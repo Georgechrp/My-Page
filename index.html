@@ -672,6 +672,17 @@ I enjoy working in <strong>dynamic environments</strong> where I can solve probl
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
+
+  <script>
+      document.querySelectorAll('.custom-nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          const sidebar = document.getElementById('customSidebar');
+          sidebar.classList.remove('open'); // ή 'active' ή ό,τι χρησιμοποιείς
+        });
+      });
+  </script>
+
+
 </body>
 
 </html>
