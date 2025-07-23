@@ -1628,6 +1628,7 @@ section,
     position: relative;
     box-shadow: none;
     padding: 10px;
+    margin-top: 50px;
   }
 
   .custom-nav-link {
